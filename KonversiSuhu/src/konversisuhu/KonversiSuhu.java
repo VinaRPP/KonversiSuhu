@@ -333,7 +333,7 @@ private void validasiAngka(KeyEvent evt) {
     if (!Character.isDigit(c) && c != '\b' && (c != '-' || !text.isEmpty())) {
         evt.consume(); // Batalkan input
         if (c != '-') {
-            JOptionPane.showMessageDialog(this, "Hanya angka yang diperbolehkan!", "Error Input", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(this, "Hanya angka dan tanda minus di depan yang diperbolehkan!", "Error Input", JOptionPane.ERROR_MESSAGE);
         }
     }
 }
